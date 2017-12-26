@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="right" >
+
+     <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="30dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:background="@drawable/barra_gris" >
+
+   <TextView
+       android:id="@+id/item_nombreMake"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:onClick="detailsButtonWishList"
+       android:text="Nombre maker"
+       android:layout_marginTop="5dp"
+       android:layout_marginLeft="5dp"
+        
+        android:clickable="false"
+       android:textAppearance="?android:attr/textAppearanceMedium"
+       android:textSize="13sp" />
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textAppearance="?android:attr/textAppearanceSmall"
+       android:textSize="0sp"
+       android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="0sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:layout_toRightOf="@+id/textView1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="0sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/bolivares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/item_precioMake"
+                android:layout_alignBottom="@+id/item_precioMake"
+                android:layout_alignParentRight="true"
+                android:text=" Bs."
+                android:textSize="13sp"
+                android:layout_marginRight="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/item_precioMake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/item_nombreMake"
+                android:layout_toLeftOf="@+id/bolivares"
+                android:onClick="detailsButtonWishList"
+                android:text="Precio maker"
+                android:clickable="false"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="13sp" />
+            
+            <ImageView
+          android:id="@+id/imageView1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginTop="5dp"
+          android:src="@drawable/separador" />
+   </RelativeLayout>
+</RelativeLayout>

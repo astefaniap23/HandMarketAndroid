@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo" >
+
+    <ListView
+        android:id="@+id/productolistView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/CmbOpciones"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+    </ListView>
+
+    <!-- android:cacheColorHint="#00000000" -->
+
+     <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="retornar"
+        android:src="@drawable/regresar" />
+
+           <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView1"
+            android:src="@drawable/producto_titulo" />
+
+    <Spinner
+        android:id="@+id/CmbOpciones"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/spinner"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/LblMensaje"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignLeft="@+id/CmbOpciones"
+        android:text="Selecciona una Categoria:"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignRight="@+id/CmbOpciones"
+        android:layout_below="@+id/imageView2"
+        android:src="@drawable/logo_pequeno" />
+
+</RelativeLayout>

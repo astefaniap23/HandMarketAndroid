@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+     <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home" />
+
+           <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView1"
+            android:src="@drawable/home_titulo" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo_menu" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="out"
+        android:src="@drawable/salir" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView9"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="productos"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/productos" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/imageView6"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="37dp"
+            android:onClick="buttonRecord"
+            android:src="@drawable/historial" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView3"
+            android:onClick="favorito"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/favoritos" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/imageView8"
+            android:layout_toRightOf="@+id/imageView4"
+            android:onClick="registro"
+            
+            android:src="@drawable/perfil" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/imageView8"
+            android:layout_toRightOf="@+id/imageView5"
+            android:onClick="shoppingcar"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/carrito" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

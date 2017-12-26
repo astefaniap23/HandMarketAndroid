@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/favoritos"
+		
+        android:title="Favoritos"/>
+
+        <item
+        android:id="@+id/productos"
+
+        android:title="Productos"/>
+        
+        <item
+        android:id="@+id/buscar"
+
+        android:title="Buscar"/>
+        
+        
+        <item
+        android:id="@+id/usuario"
+
+        android:title="Usuario"/>
+
+          <item
+        android:id="@+id/carrito"
+
+        android:title="Carrito"/>
+            
+        <item
+        android:id="@+id/salir"
+        android:title="Salir" />
+    
+</menu>

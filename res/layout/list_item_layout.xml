@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  
+    >
+<RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="52dp"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:background="@drawable/barra_gris" >
+
+      <ImageView
+          android:id="@+id/item_icon"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginLeft="22dp"
+          android:adjustViewBounds="false"
+          android:layout_marginTop="5dp"
+          android:scaleType="centerInside" />
+
+      <ImageButton
+          android:id="@+id/carritoDetalle"
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:layout_alignTop="@+id/item_nombreMake"
+          android:layout_marginRight="20dp"
+          android:layout_toLeftOf="@+id/favoritosDetalle"
+          android:background="@drawable/boton_carrito"
+          android:onClick="carButton" />
+
+      <TextView
+          android:id="@+id/item_nombreMake"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/item_icon"
+          android:layout_marginLeft="30dp"
+          android:layout_toRightOf="@+id/item_icon"
+          android:onClick="detailsButton"
+          android:text="Nombre maker"
+            android:textStyle="bold"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_marginTop="5dp"
+          android:textSize="12sp" />
+
+      <TextView
+          android:id="@+id/item_precioMake"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/item_nombreMake"
+          android:layout_below="@+id/item_nombreMake"
+          android:text="Precio maker"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textSize="10sp" />
+
+      <ImageView
+          android:id="@+id/imageView1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginTop="5dp"
+          android:src="@drawable/separador" />
+
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/item_icon"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:textSize="0sp"
+          android:visibility="invisible" />
+
+      <ImageView
+          android:id="@+id/imageView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:layout_toLeftOf="@+id/carritoDetalle"
+          android:onClick="detailsButton"
+          android:src="@android:color/transparent" />
+
+      <ImageButton
+          android:id="@+id/favoritosDetalle"
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:layout_alignParentRight="true"
+          android:layout_alignTop="@+id/carritoDetalle"
+          android:layout_marginRight="15dp"
+          android:background="@drawable/star_selector"
+          
+          android:onClick="wishList" />
+
+      <TextView
+          android:id="@+id/starStatus"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/carritoDetalle"
+          android:layout_alignRight="@+id/item_nombreMake"
+          android:layout_toRightOf="@+id/item_nombreMake"
+          android:clickable="false"
+          android:text="Medium Text"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:visibility="invisible" />
+		
+      </RelativeLayout>
+   
+</RelativeLayout>

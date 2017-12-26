@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uno.menu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="9" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconapp"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="interfaces.client.Registro"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="interfaces.product.WishList"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog"  >
+            <intent-filter>
+                <action android:name="android.intent.action.FAVORITOS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="interfaces.product.ProductSearch"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog"  >
+            <intent-filter>
+                <action android:name="android.intent.action.BUSCAR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity	android:name="interfaces.product.ProductDetailsShopping" android:screenOrientation="portrait" ></activity>    
+        <activity android:name="interfaces.product.Product" android:screenOrientation="portrait"></activity>
+        <activity    android:name="interfaces.product.ProductDetails" android:screenOrientation="portrait"></activity>
+      	<activity    android:name="interfaces.product.ShoppingCar" android:screenOrientation="portrait" ></activity>
+      	<activity    android:name="interfaces.product.GoToTheSite" android:screenOrientation="portrait" ></activity>
+      		<activity 	android:name="interfaces.product.WishList" android:screenOrientation="portrait" ></activity>
+      	<activity    android:name="interfaces.product.GoToDelivery" android:screenOrientation="portrait" ></activity>      
+      	<activity	android:name="interfaces.product.ProductDetailsWishList" android:screenOrientation="portrait" ></activity> 
+      	<activity	android:name="interfaces.product.RecordBill" android:screenOrientation="portrait" ></activity>  
+      	<activity	android:name="interfaces.product.RecordBillDetails" android:screenOrientation="portrait" ></activity>  
+        <activity    android:name="principal.interfaces.Out" android:screenOrientation="portrait" ></activity>
+        <activity    android:name="principal.interfaces.MainActivity" android:screenOrientation="portrait" ></activity>
+
+        
+        <activity    android:name="interfaces.client.UsuarioPerfil" android:screenOrientation="portrait" ></activity>           
+        <activity    android:name="interfaces.client.ModifyClient" android:screenOrientation="portrait" ></activity>           
+	    <activity    android:name="interfaces.client.VerifyClient" android:screenOrientation="portrait" ></activity>
+        <activity    android:name="interfaces.client.DeleteClient"  android:screenOrientation="portrait" ></activity>
+        <activity    android:name="interfaces.client.NuevoRegistro" android:screenOrientation="portrait" ></activity>
+         <activity    android:name="interfaces.client.ForgotPassword" android:screenOrientation="portrait" ></activity>
+         <activity    android:name="interfaces.client.ForgotUser" android:screenOrientation="portrait" ></activity>
+       
+    </application>
+
+</manifest>

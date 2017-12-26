@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/txtContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtUsuario"
+        android:layout_alignRight="@+id/campoUsuario"
+        android:layout_below="@+id/campoUsuario"
+        android:text="Contraseña "
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/campoContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_alignLeft="@+id/txtUsuario"
+        android:layout_alignRight="@+id/txtContrasena"
+        android:layout_below="@+id/txtContrasena"
+        android:background="@drawable/campo"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:padding="5dip"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/txtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="16dp"
+        android:text="Usuario "
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/olvidoContrasena"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/olvidoUsuario"
+        android:background="@android:color/transparent"
+        android:onClick="forgotPassword"
+        android:text="¿Olvidó contraseña?"
+        android:layout_marginTop="5dp"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logo_inicio" />
+
+    <Button
+        android:id="@+id/olvidoUsuario"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/campoContrasena"
+        android:background="@android:color/transparent"
+        android:onClick="forgotUser"
+        android:layout_marginTop="10dp"
+        android:text="¿Olvidó usuario?"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/olvidoContrasena"
+        android:layout_centerHorizontal="true"
+        android:onClick="entrar"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/entrar" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:onClick="nuevoRegistro"
+        android:layout_below="@+id/imageView1"
+        android:src="@drawable/registrate" />
+
+    <EditText
+        android:id="@+id/campoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_alignLeft="@+id/txtUsuario"
+        android:layout_alignRight="@+id/txtUsuario"
+        android:layout_below="@+id/txtUsuario"
+        android:background="@drawable/campo"
+        android:ems="10"
+        android:focusable="true"
+        android:padding="5dip"
+        android:layout_centerHorizontal="true"
+        android:textSize="13dp" >
+            
+                        <requestFocus />
+        </EditText>
+ </RelativeLayout>

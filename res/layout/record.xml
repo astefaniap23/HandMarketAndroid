@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo" >
+
+      <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="retornar"
+        android:src="@drawable/regresar" />
+
+           <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView1"
+        android:src="@drawable/historial_compras" />
+
+    <ListView
+        android:id="@+id/wishlistlistView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/gris"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignLeft="@+id/wishlistlistView"
+        android:layout_toLeftOf="@+id/imageView3"
+        android:text="Seleccione los registros que desea eliminar"
+        android:textColor="#000000"
+        android:textSize="13dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignRight="@+id/wishlistlistView"
+        android:layout_below="@+id/imageView2"
+        android:src="@drawable/logo_pequeno" />
+
+    <RelativeLayout
+        android:id="@+id/gris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/fondo_azul" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="quitarDelCarrito"
+            android:src="@drawable/eliminar_registros" />
+    </RelativeLayout>
+
+</RelativeLayout>

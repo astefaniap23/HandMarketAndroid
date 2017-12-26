@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo" >
+
+      <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="retornar"
+        android:src="@drawable/regresar" />
+
+           <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView1"
+        android:src="@drawable/detalle_titulo" />
+
+    <ListView
+        android:id="@+id/wishlistlistView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gris"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wishlistlistView"
+        android:layout_alignLeft="@+id/wishlistlistView"
+        android:text="Listado de procutos comprados:"
+        android:textColor="#000000"
+        android:textSize="13dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignRight="@+id/wishlistlistView"
+        android:layout_below="@+id/imageView2"
+        android:src="@drawable/logo_pequeno" />
+
+    <RelativeLayout
+        android:id="@+id/gris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/fondo_azul" >
+
+        <TextView
+            android:id="@+id/totalProductosHistorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="Total productos:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/deliveryHistorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/totalProductosHistorial"
+            android:text="Delivery:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/totalHistorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/deliveryHistorial"
+            android:text="Total:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
